@@ -1,6 +1,6 @@
 
-#CBMS
-__Common Background Management System.__
+#CFMS
+__Common Foundation Management System.__
 
 
 >More details about the styles and patterns used in these apps can be found in my [AngularJS Style Guide](https://github.com/longzhiyou/angular-styleguide).
@@ -71,7 +71,7 @@ app --> [
 ```
 
 ## Requirements
-[test bootstrap](http://www.runoob.com/bootstrap/bootstrap-button-dropdowns.html) 
+[test bootstrap](http://www.runoob.com/bootstrap/bootstrap-button-dropdowns.html)
 
 - Install Node
 	- on OSX install [test bootstrap](http://www.runoob.com/bootstrap/bootstrap-button-dropdowns.html) and type `brew install node`
