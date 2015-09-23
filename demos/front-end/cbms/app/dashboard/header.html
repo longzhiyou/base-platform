@@ -1,0 +1,115 @@
+﻿<!--<nav class="navbar  navbar-fixed-top" data-ng-controller="header as vm">-->
+    <!--<div class="navbar-inner">-->
+
+        <!--<div>-->
+            <!--<ul class="nav">-->
+                <!--<li data-ng-repeat="state in vm.states"-->
+                    <!--data-ng-class="{ active: vm.isSelected(state) }" data-ng-click="vm.selectState(state)" >-->
+                    <!--<a href="#" data-ui-sref="{{state.sref}}" >{{state.name}}</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</nav>-->
+
+
+<!--<p>带有下拉菜单的标签页</p>-->
+<!--<ul class="nav nav-tabs">-->
+    <!--<li class="active"><a href="#">Home</a></li>-->
+    <!--<li><a href="#">SVN</a></li>-->
+    <!--<li><a href="#">iOS</a></li>-->
+    <!--<li><a href="#">VB.Net</a></li>-->
+    <!--<li class="dropdown">-->
+        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">-->
+            <!--Java <span class="caret"></span>-->
+        <!--</a>-->
+        <!--<ul class="dropdown-menu">-->
+            <!--<li><a ui-sref="dashboard.home">dashboard.home</a></li>-->
+            <!--<li><a ui-sref="dashboard.content">dashboard.content</a></li>-->
+            <!--<li><a href="#">EJB</a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">分离的链接</a></li>-->
+        <!--</ul>-->
+    <!--</li>-->
+    <!--<li><a href="#">PHP</a></li>-->
+<!--</ul>-->
+
+
+<!--=== Header ===-->
+<div class="header" ng-controller="header as vm">
+    <div class="container">
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <!-- Home -->
+
+                <li ng-repeat="state1 in vm.states" data-ng-class="{'dropdown':state1.children}" >
+                    <a ui-sref="{{ state1.link }}" class="dropdown-toggle" data-toggle="dropdown">{{ state1.label }}
+
+                    </a>
+                    <ul ng-if="state1.children" class="dropdown-menu">
+                        <li ng-repeat="state2 in state1.children"  data-ng-class="{active: vm.isSelected(state2),'dropdown-submenu':state2.children}" >
+                            <a  ui-sref="{{ state2.link }}"  >{{ state2.label }}</a>
+                            <ul ng-if="state2.children" class="dropdown-menu">
+                                <li ng-repeat="state3 in state2.children">
+                                    <a ui-sref="{{ state3.link }}">{{ state3.label }}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--<li class="dropdown" ng-repeat="state in vm.states"-->
+                    <!--ng-class="{ active: vm.isSelected(state) }" ng-click="vm.selectState(state)" >-->
+                    <!--<a href="#" ui-sref="{{state.sref}}" >{{state.name}}</a>-->
+                <!--</li>-->
+
+                <!-- End Home -->
+
+
+            </ul>
+
+
+
+        </div><!--/end container-->
+    </div><!--/navbar-collapse-->
+</div>
+<!--=== End Header ===-->
+</div>
+
+
+
+
+<!--<ul class="nav navbar-nav">-->
+    <!--&lt;!&ndash; Home &ndash;&gt;-->
+
+    <!--<li ng-repeat="state1 in vm.states" data-ng-class="{'dropdown':state1.children}" >-->
+        <!--<a ui-sref="{{ state1.link }}" ng-click="vm.selectState(state1)"-->
+           <!--class="dropdown-toggle" data-toggle="dropdown">{{ state1.label }}-->
+
+        <!--</a>-->
+        <!--<ul ng-if="state1.children" class="dropdown-menu">-->
+            <!--<li ng-repeat="a2 in state1.children"  data-ng-class="{'dropdown-submenu':a2.children}" >-->
+                <!--<a  ui-sref="{{ a2.link }}" ng-click="vm.selectState(a2)" >{{ a2.label }}</a>-->
+                <!--<ul ng-if="a2.children" class="dropdown-menu">-->
+                    <!--<li ng-repeat="a3 in a2.children">-->
+                        <!--<a ui-sref="{{ a3.link }}">{{ a3.label }}</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</li>-->
+
+    <!--&lt;!&ndash;<li class="dropdown" ng-repeat="state in vm.states"&ndash;&gt;-->
+    <!--&lt;!&ndash;ng-class="{ active: vm.isSelected(state) }" ng-click="vm.selectState(state)" >&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#" ui-sref="{{state.sref}}" >{{state.name}}</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+    <!--&lt;!&ndash; End Home &ndash;&gt;-->
+
+
+<!--</ul>-->

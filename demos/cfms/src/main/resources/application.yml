@@ -1,0 +1,11 @@
+
+server:
+  port: ${port:9000}
+
+
+security:
+  user:
+    password: password
+logging:
+  level:
+    org.springframework.security: DEBUG
