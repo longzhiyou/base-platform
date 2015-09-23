@@ -31,11 +31,17 @@ import java.io.IOException;
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-        @Autowired
+    @Autowired
+    private CustomUserDetailsService customUserDetailsService;
+
+
+    @Autowired
     public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("bill").password("abc123").roles("USER");
-        auth.inMemoryAuthentication().withUser("admin").password("root123").roles("ADMIN");
-        auth.inMemoryAuthentication().withUser("dba").password("root123").roles("ADMIN","DBA");
+//        auth.inMemoryAuthentication().withUser("bill").password("abc123").roles("USER");
+//        auth.inMemoryAuthentication().withUser("admin").password("root123").roles("ADMIN");
+//        auth.inMemoryAuthentication().withUser("dba").password("root123").roles("ADMIN","DBA");
+
+            auth.userDetailsService(customUserDetailsService).passwordEncoder(new BCryptPasswordEncoder(4));
 
         }
 

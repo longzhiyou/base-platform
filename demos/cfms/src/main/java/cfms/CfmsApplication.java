@@ -29,6 +29,7 @@ import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.WebUtils;
 
@@ -41,7 +42,7 @@ public class CfmsApplication {
     @RequestMapping(value = "/{[path:[^\\.]*}")
     public String redirect() {
         // Forward to home page so that route is preserved.
-        return "forward:/home";
+        return "forward:/";
     }
 
     //认证成功之后才会走这里
