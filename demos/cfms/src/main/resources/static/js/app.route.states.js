@@ -11,7 +11,7 @@
     function configureStates($stateProvider, $urlRouterProvider) {
 
         $urlRouterProvider
-            .otherwise('/login');       // Return to the main ordering screen
+            .otherwise('/login');       // Return to the login ordering screen
 
         $stateProvider
             .state('login',
@@ -23,7 +23,7 @@
             .state('dashboard',
             {
                 url: '/dashboard',
-                templateUrl: 'js/dashboard/main.html'
+                templateUrl: 'js/dashboard/dashboard.html'
             })
                 .state('dashboard.home',
                 {
@@ -33,7 +33,7 @@
                 .state('dashboard.content',
                 {
                     url: '/content',
-                    templateUrl: 'js/dashboard/content1.html'
+                    templateUrl: 'js/dashboard/content.html'
                 })
 
         ;

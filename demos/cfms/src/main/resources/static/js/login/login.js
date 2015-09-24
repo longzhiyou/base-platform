@@ -1,30 +1,36 @@
-angular.module('navigation', ['ngRoute', 'auth']).controller(
-		'navigation',
 
-		function($scope, $route, auth) {
+(function(angular) {
+	'use strict';
 
-			$scope.credentials = {};
+	angular.module( "app" ).controller( 'login', ['$location','auth', controller]);
 
-			$scope.tab = function(route) {
-				return $route.current && route === $route.current.controller;
-			};
+	function controller( $location ) {
 
-			$scope.authenticated = function() {
-				return auth.authenticated;
-			}
+		var vm = this;
+		vm.error     = 'dashboard.home';
+		vm.isSelected   = isSelected;
+		vm.login       = login;
+		vm.credentials = {};
 
-			$scope.login = function() {
-				auth.authenticate($scope.credentials, function(authenticated) {
-					if (authenticated) {
-						console.log("Login succeeded")
-						$scope.error = false;
-					} else {
-						console.log("Login failed")
-						$scope.error = true;
-					}
-				})
-			};
+		vm.authenticated = function() {
+			return auth.authenticated;
+		}
 
-			$scope.logout = auth.clear;
+		function login() {
+			auth.authenticate(vm.credentials, function(authenticated) {
+				if (authenticated) {
+					console.log("Login succeeded")
+					vm.error = false;
+				} else {
+					console.log("Login failed")
+					vm.error = true;
+				}
+			})
+		};
 
-		});
+		vm.logout = auth.clear;
+
+	};
+
+}( this.angular ));
+

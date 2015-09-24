@@ -4,11 +4,14 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/README.md" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/db/spring_security.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.module.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.route.states.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/appStart.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/dashboard.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/main.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/routeStates.js" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

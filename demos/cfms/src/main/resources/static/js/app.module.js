@@ -9,12 +9,15 @@
          * its components are available.
          */
 
+        'ui.router',
+
         /*
          * Everybody has access to these.
          * We could place these under every feature area,
          * but this is easier to maintain.
          */
 
+        'auth'
         //'app.widgets',
 
         /*
