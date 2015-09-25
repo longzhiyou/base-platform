@@ -9,7 +9,7 @@
          * its components are available.
          */
 
-        'ui.router',
+        'ui.router'
 
         /*
          * Everybody has access to these.
@@ -17,7 +17,7 @@
          * but this is easier to maintain.
          */
 
-        'auth'
+
         //'app.widgets',
 
         /*
@@ -27,10 +27,8 @@
         //'app.dashboard',
         //'app.layout'
     ])
-        .run(
-        [          '$rootScope', '$state', '$stateParams','auth',
-            function ($rootScope,   $state,   $stateParams,auth) {
-
+        .run( [ '$rootScope', '$state', '$stateParams','appStart','auth',
+            function ( $rootScope,   $state,   $stateParams,appStart,auth ) {
                 // It's very handy to add references to $state and $stateParams to the $rootScope
                 // so that you can access them from any scope within your applications.For example,
                 // <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li>
@@ -38,12 +36,10 @@
                 $rootScope.$state = $state;
                 $rootScope.$stateParams = $stateParams;
 
+                appStart.start();
                 // Initialize auth module with the home page and login/logout path
                 // respectively
-                auth.init('/home', '/login', '/logout');
-
-            }
-        ]
-    );
+                //auth.init('/home', '/login', '/logout');
+            }]);
 
 })();

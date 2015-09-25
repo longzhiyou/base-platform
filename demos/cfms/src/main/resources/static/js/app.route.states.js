@@ -6,12 +6,12 @@
     'use strict';
     
     angular.module("app")
-        .config(['$stateProvider', '$urlRouterProvider', configureStates]);
+        .config(['$httpProvider','$stateProvider', '$urlRouterProvider', configureStates]);
     /////////////////////
-    function configureStates($stateProvider, $urlRouterProvider) {
+    function configureStates( $httpProvider,$stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider
-            .otherwise('/login');       // Return to the login ordering screen
+        //$locationProvider.html5Mode(true);
+        $urlRouterProvider.otherwise('/login');       // Return to the login ordering screen
 
         $stateProvider
             .state('login',
@@ -34,9 +34,9 @@
                 {
                     url: '/content',
                     templateUrl: 'js/dashboard/content.html'
-                })
+                });
 
-        ;
+        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
     }
 
