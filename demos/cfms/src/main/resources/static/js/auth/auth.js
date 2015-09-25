@@ -38,7 +38,6 @@
 						auth.authenticated = false;
 					}
 					callback && callback(auth.authenticated);
-					$location.path(auth.path==auth.loginPath ? auth.homePath : auth.path);
 				}).error(function() {
 					auth.authenticated = false;
 					callback && callback(false);

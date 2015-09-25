@@ -10,14 +10,12 @@
     /////////////////////
     function configureStates( $httpProvider,$stateProvider, $urlRouterProvider,$locationProvider) {
 
-
-        $urlRouterProvider.otherwise('/login');       // Return to the login ordering screen
-        $locationProvider
-            .html5Mode(
-            {
-                enabled: true,
+        $locationProvider.html5Mode({
+            enabled: true,
                 requireBase: false
             });
+        $urlRouterProvider.otherwise('/login');       // Return to the login ordering screen
+
         $stateProvider
             .state('login',
             {
