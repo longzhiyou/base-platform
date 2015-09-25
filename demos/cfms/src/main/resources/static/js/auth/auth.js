@@ -5,11 +5,6 @@
 
 			var auth = {
 				authenticated : false,
-				loginPath : '/login',
-				logoutPath : '/logout',
-				homePath : '/',
-				path : $location.path(),
-
 				init:init,
 				authenticate: authenticate,
 				clear:clear
@@ -17,17 +12,14 @@
 			return auth;
 			//////////////
 
-			function init(homePath, loginPath, logoutPath){
-				auth.homePath = homePath;
-				auth.loginPath = loginPath;
-				auth.logoutPath = logoutPath;
+			function init(){
 
 				auth.authenticate({}, function(authenticated) {
 					if (authenticated) {
 						$location.path(auth.path);
 					}
 				})
-			};
+			}
 
 			function authenticate(credentials, callback){
 
@@ -52,7 +44,7 @@
 					callback && callback(false);
 				});
 
-			};
+			}
 
 			function clear(){
 
@@ -64,7 +56,7 @@
 					console.log("Logout failed");
 				});
 
-			};
+			}
 
 
 		}

@@ -2,9 +2,9 @@
 (function(angular) {
 	'use strict';
 
-	angular.module( "app" ).controller( 'login', ['$location','auth', controller]);
+	angular.module( "app" ).controller( 'login', ['$state','auth', controller]);
 
-	function controller( $location,auth ) {
+	function controller( $state,auth ) {
 
 		var vm = this;
 		vm.error     = false;
@@ -21,6 +21,7 @@
 				if (authenticated) {
 					console.log("Login succeeded");
 					vm.error = false;
+                    $state.go('dashboard.home');
 				} else {
 					console.log("Login failed");
 					vm.error = true;
