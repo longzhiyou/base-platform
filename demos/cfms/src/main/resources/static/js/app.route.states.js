@@ -10,17 +10,20 @@
     /////////////////////
     function configureStates( $httpProvider,$stateProvider, $urlRouterProvider,$locationProvider) {
 
-        $locationProvider.html5Mode({
-            enabled: true,
-                requireBase: false
-            });
+        //$locationProvider.html5Mode({
+        //    enabled: true,
+        //        requireBase: false
+        //    });
         $urlRouterProvider.otherwise('/login');       // Return to the login ordering screen
 
         $stateProvider
             .state('login',
             {
                 url: '/login',
-                templateUrl: 'js/login/login.html'
+                templateUrl: 'js/login/login.html',
+                controller: 'LoginController',
+                controllerAs: 'vm'
+
             })
 
             .state('dashboard',

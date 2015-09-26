@@ -7,9 +7,10 @@
 (function(angular) {
     'use strict';
 
-    angular.module( "app" ).controller( 'header', ['$location', controller]);
+    angular.module( "app" ).controller( 'HeaderController', ['$state', HeaderController]);
 
-    function controller( $location ) {
+    /////////////////////
+    function HeaderController( $state ) {
 
         var headerStates = [
             { label: 'Home',     link: 'dashboard.home',  children: [
@@ -25,7 +26,7 @@
 
 
         var vm = this;
-            vm.homeSref     = 'dashboard.home';
+            vm.homeSref     = 'app.home';
             vm.isSelected   = isSelected;
             vm.states       = headerStates;
             vm.selectState = selectState;

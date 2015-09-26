@@ -9,8 +9,9 @@
          * its components are available.
          */
 
-        'ui.router'
+        'ui.router',
 
+        'ng-backstretch'
         /*
          * Everybody has access to these.
          * We could place these under every feature area,
@@ -37,6 +38,15 @@
                 $rootScope.$stateParams = $stateParams;
 
                 appStart.start();
+
+                //$.backstretch([
+                //    "images/bg/19.jpg",
+                //    "images/bg/18.jpg",
+                //], {
+                //    fade: 1000,
+                //    duration: 7000
+                //});
+
                 // Initialize auth module with the home page and login/logout path
                 // respectively
                 //auth.init('/home', '/login', '/logout');

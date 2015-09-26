@@ -1,42 +1,46 @@
 
 <!--=== Content Part ===-->
-<div class="container content" ng-controller="login as vm">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-            <form class="reg-page" ng-submit="vm.login()">
 
-                <div class="alert alert-danger" ng-show="vm.error">
-                    There was a problem logging in. Please try again.
-                </div>
+<div class="container content backstretch"  backstretch backstretch-images="vm.images" backstretch-duration="5000" backstretch-fade="1">
 
-                <div class="reg-header">
-                    <h2>Login to your account</h2>
-                </div>
 
-                <div class="input-group margin-bottom-20">
-                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                    <input type="text" placeholder="Username" ng-model="vm.credentials.username" class="form-control">
-                </div>
-                <div class="input-group margin-bottom-20">
-                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <input type="password" placeholder="Password" ng-model="vm.credentials.password" class="form-control">
-                </div>
+<!--<div class="container content " >-->
 
-                <div class="row">
-                    <!--<div class="col-md-6 checkbox">-->
-                    <!--<label><input type="checkbox"> Stay signed in</label>-->
-                    <!--</div>-->
-                    <div class="col-md-6">
-                        <button class="btn-u pull-right" type="submit">Login</button>
-                    </div>
-                </div>
+    <!--Reg Block-->
+    <div class="reg-block">
+        <div class="reg-block-header">
+            <h2>Login to your account</h2>
 
-                <hr>
-
-                <!--<h4>Forget your Password ?</h4>-->
-                <!--<p>no worries, <a class="color-green" href="#">click here</a> to reset your password.</p>-->
-            </form>
         </div>
-    </div><!--/row-->
+
+
+        <form class="reg-page" ng-submit="vm.login()">
+
+
+            <div class="alert alert-danger" ng-show="vm.error">
+                There was a problem logging in. Please try again.
+            </div>
+
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" placeholder="Username" ng-model="vm.credentials.username" class="form-control">
+            </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="password" placeholder="Password" ng-model="vm.credentials.password" class="form-control">
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <button type="submit" class="btn-u btn-block">Log In</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <!--End Reg Block-->
 </div><!--/container-->
 <!--=== End Content Part ===-->
+
+

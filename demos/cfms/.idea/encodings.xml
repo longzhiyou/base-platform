@@ -2,16 +2,39 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/README.md" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/db/spring_security.sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/app/login/login.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/app/vendor/ng-backstretch.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/app.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/blocks.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/custom.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/footers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/footers/footer-v1.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/headers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/headers/header-default.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/ie8.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/player.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/plugins.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/theme-colors" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/theme-skins" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/theme-skins/dark.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/images/bg/7.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/images/logo1-default.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/images/logo2-default.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/images/patterns/4.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/images/patterns/5.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.route.states.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.start.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/dashboard.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/routeStates.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/login/login.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/vendor/ng-backstretch.min.js" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
