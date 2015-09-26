@@ -5,9 +5,9 @@
  */
 (function( angular  ) {
 
-    angular.module("app").factory('appStart',['$rootScope',factory]);
+    angular.module("app").factory('appStart',['$rootScope','Logger',factory]);
 
-    function factory ($rootScope){
+    function factory ($rootScope,Logger){
 
         var appStart = {
             reportStateChangesEnabled: false,
@@ -16,6 +16,8 @@
         return appStart;
         //////////////
         function start ( ) {
+
+            Logger.debug=true;
             console.log( "cfms is loaded and running on " );
             // Trigger initial loading of data from server
             // The app may appear to be more responsive if loading happens in background
@@ -29,17 +31,17 @@
                 appStart.reportStateChangesEnabled = true;
                 $rootScope.$on('$stateChangeStart',
                     function(event, toState, toParams, fromState){
-                        console.log("stateChangeStart: from '"+fromState.name + "' to '"+ toState.name+"'");
+                        Logger.log("stateChangeStart: from '"+fromState.name + "' to '"+ toState.name+"'");
                     });
 
                 $rootScope.$on('$stateChangeError',
                     function(event, toState, toParams, fromState, fromParams, error){
-                        console.log("stateChangeError: from '"+fromState.name + "' to '"+ toState.name+"' with error: "+error);
+                        Logger.log("stateChangeError: from '"+fromState.name + "' to '"+ toState.name+"' with error: "+error);
                     });
 
                 $rootScope.$on('$stateChangeSuccess',
                     function(event, toState, toParams, fromState){
-                        console.log("stateChangeSuccess: from '"+fromState.name + "' to '"+ toState.name+"' with params " +
+                        Logger.log("stateChangeSuccess: from '"+fromState.name + "' to '"+ toState.name+"' with params " +
                             JSON.stringify(toParams));
                     });
 

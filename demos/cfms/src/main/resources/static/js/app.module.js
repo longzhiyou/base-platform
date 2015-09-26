@@ -11,7 +11,9 @@
 
         'ui.router',
 
-        'ng-backstretch'
+        'ng-backstretch',
+        'angular-logger-max'
+
         /*
          * Everybody has access to these.
          * We could place these under every feature area,
