@@ -73,10 +73,27 @@ app --> [
 ## Requirements
 [test bootstrap](http://www.runoob.com/bootstrap/bootstrap-button-dropdowns.html)
 
-- Install Node
-	- on OSX install [test bootstrap](http://www.runoob.com/bootstrap/bootstrap-button-dropdowns.html) and type `brew install node`
-	- on Windows install [chocolatey](https://chocolatey.org/) and type `choco install nodejs`
-- On OSX you can alleviate the need to run as sudo by [following these instructions](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md). I highly recommend this step on OSX
+## Running an AngularJS App in Production
+- Disabling Debug Data
+
+```javascript
+
+myApp.config(['$compileProvider', function ($compileProvider) {
+  $compileProvider.debugInfoEnabled(false);
+}]);
+
+```
+
+- Strict DI Mode
+```html
+It is recommended to automate the explicit annotation via a tool 
+like `ng-annotate` when you deploy to production (and enable strict di mode)
+
+<div ng-app="myApp" ng-strict-di>
+  <!-- your app here -->
+</div>
+
+```
 - Open terminal
 - Type `npm install -g node-inspector bower gulp`
 

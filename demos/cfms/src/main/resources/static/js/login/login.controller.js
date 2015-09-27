@@ -28,7 +28,7 @@
 				if (authenticated) {
 					console.log("Login succeeded");
 					vm.error = false;
-                    $state.go('app.ui');
+                    $state.go('app.profile');
 				} else {
 					console.log("Login failed");
 					vm.error = true;
