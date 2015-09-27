@@ -4,9 +4,16 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/db/spring_security.sql" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/app/login/login.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/app/vendor/ng-backstretch.min.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/app.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/app.route.states.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/app.start.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/dashboard/dashboard.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/dashboard/header.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/dashboard/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/login/login.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/app/vendor/ng-backstretch.min.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/css/app.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/css/blocks.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/css/custom.css" charset="UTF-8" />
@@ -26,15 +33,6 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/static/images/logo2-default.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/images/patterns/4.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/images/patterns/5.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.module.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.route.states.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/app.start.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/dashboard.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.controller.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/dashboard/header.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/login/login.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js/vendor/ng-backstretch.min.js" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -13,13 +13,15 @@
     function HeaderController( $state ) {
 
         var headerStates = [
-            { label: 'Home',     link: 'dashboard.home',  children: [
-                { label: 'Home.children1', link: 'dashboard.home',children:[
-                    {label: 'Home.children1.children', link: 'dashboard.home'}]
-                },
-                { label: 'Home.children', link: 'dashboard.content'}]
-            },
-            { label: 'Content',  link: 'dashboard.content'}
+            { label: 'Ui',     link: '',  children: [
+                { label: 'profile', link: 'app.profile'
+                    //,children:[
+                    //{label: 'Home.children1.children', link: 'dashboard.home'}]
+                }
+                //,{ label: 'Home.children', link: 'dashboard.content'}
+                ]
+            }
+            //,{ label: 'Content',  link: 'app.ui'}
 
         ];
 

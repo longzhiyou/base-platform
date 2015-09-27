@@ -12,7 +12,7 @@
         'ui.router',
 
         'ng-backstretch',
-        'angular-logger-max'
+        'angular-logger-max',
 
         /*
          * Everybody has access to these.
@@ -26,7 +26,7 @@
         /*
          * Feature areas
          */
-        //'app.avengers',
+        'app.ui'
         //'app.dashboard',
         //'app.layout'
     ])
@@ -40,14 +40,6 @@
                 $rootScope.$stateParams = $stateParams;
 
                 appStart.start();
-
-                //$.backstretch([
-                //    "images/bg/19.jpg",
-                //    "images/bg/18.jpg",
-                //], {
-                //    fade: 1000,
-                //    duration: 7000
-                //});
 
                 // Initialize auth module with the home page and login/logout path
                 // respectively

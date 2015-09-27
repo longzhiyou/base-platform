@@ -72,26 +72,25 @@
 
 
 
-<html ng-app="app">
+<html >
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 	<title >CFMS</title>
-	<style>
-	/* This helps the ng-show/ng-hide animations start at the right place. */
-	/* Since Angular has this but needs to load, this gives us the class early. */
-	.ng-hide {
-	display: none!important;
-	}
 
-	.backstretch {
-	width: 100%;
-	height: 100%;
-	}
+	<style type="text/css">
+		.ng-cloak {
+			display: none;
+		}
+
+		/* This helps the ng-show/ng-hide animations start at the right place. */
+		/* Since Angular has this but needs to load, this gives us the class early. */
+		.ng-hide {
+			display: none!important;
+		}
 
 	</style>
-
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -121,9 +120,9 @@
 
 </head>
 
-<body class="header-fixed">
+<body class="header-fixed" >
 
-<div ui-view></div>
+<div ng-app="app" class="ng-cloak" ui-view></div>
 
 <!-- inject-vendor:js -->
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
@@ -157,13 +156,14 @@
 <script src="js/dashboard/header.controller.js"></script>
 <script src="js/dashboard/header.directive.js"></script>
 
+<!-- *** UI scripts *** -->
+<script src="js/ui/ui.module.js"></script>
+<script src="js/ui/ui.route.js"></script>
+<script src="js/ui/ui.controller.js"></script>
 
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		App.init();
-//        OwlCarousel.initOwlCarousel();
-//        StyleSwitcher.initStyleSwitcher();
-//        ParallaxSlider.initParallaxSlider();
 	});
 </script>
 

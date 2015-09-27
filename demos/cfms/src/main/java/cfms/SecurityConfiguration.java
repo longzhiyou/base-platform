@@ -50,7 +50,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers("/index.html", "/")
+                .antMatchers("/index.html", "/", "/app/**")
                 .permitAll().anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/")
