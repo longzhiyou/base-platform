@@ -6,10 +6,10 @@
     'use strict';
     
     angular.module("app.ui")
-        .config(['$stateProvider', configureStates]);
+        .config(['$stateProvider','$ocLazyLoadProvider', configureStates]);
 
     /////////////////////
-    function configureStates($stateProvider) {
+    function configureStates($stateProvider,$ocLazyLoadProvider) {
         $stateProvider
             .state('app.ui',
             {

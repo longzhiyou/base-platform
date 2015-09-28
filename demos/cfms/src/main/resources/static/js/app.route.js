@@ -6,9 +6,9 @@
     'use strict';
     
     angular.module("app")
-        .config(['$httpProvider','$stateProvider', '$urlRouterProvider','$compileProvider', configureStates]);
+        .config(['$httpProvider','$stateProvider', '$urlRouterProvider','$compileProvider','$ocLazyLoadProvider', configureStates]);
     /////////////////////
-    function configureStates( $httpProvider,$stateProvider, $urlRouterProvider,$compileProvider) {
+    function configureStates( $httpProvider,$stateProvider, $urlRouterProvider,$compileProvider,$ocLazyLoadProvider) {
 
         //$locationProvider.html5Mode({
         //    enabled: true,
@@ -25,7 +25,18 @@
                 url: '/login',
                 templateUrl: 'js/login/login.html',
                 controller: 'LoginController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                resolve: {
+                    loadPlugin: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load([
+                            {
+                                files: ['js/login/login.v2.css','js/login/login.controller.js']
+                            }
+
+
+                        ]);
+                    }
+                }
 
             })
 
@@ -33,8 +44,21 @@
             {
                 abstract: true,
                 url: '',
-                templateUrl: 'js/dashboard/dashboard.html'
-            })
+                templateUrl: 'js/dashboard/dashboard.html',
+                resolve: {
+                    loadPlugin: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load([
+                            {
+                                files: ['css/headers/header-default.css','js/dashboard/header.controller.js']
+                            }
+
+
+                        ]);
+                    }
+                }
+
+
+            });
 
 
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

@@ -35,7 +35,7 @@
 
 
 	<!-- CSS Header and Footer -->
-	<link href="css/headers/header-default.css" rel="stylesheet">
+	<!--<link href="css/headers/header-default.css" rel="stylesheet">-->
 
 	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="css/plugins/animate.css">
@@ -48,7 +48,7 @@
 	<!--<link rel="stylesheet" href="css/theme-skins/dark.css">-->
 
 	<!-- CSS Customization -->
-	<link rel="stylesheet" href="js/login/login.v2.css">
+	<!--<link rel="stylesheet" href="js/login/login.v2.css">-->
 	<link rel="stylesheet" href="css/custom.css">
 
 
@@ -61,16 +61,19 @@
 <!-- inject-vendor:js -->
 
 <!-- production -->
-<!--<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>-->
-<!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
-<!--<script src="//cdn.bootcss.com/angular.js/1.4.5/angular.min.js"></script>-->
-<!--<script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>-->
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/angular.js/1.4.5/angular.min.js"></script>
+<script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
 <!-- dev -->
-<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-<script src="//cdn.bootcss.com/angular.js/1.4.5/angular.js"></script>
-<script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<!--<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>-->
+<!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>-->
+<!--<script src="//cdn.bootcss.com/angular.js/1.4.5/angular.js"></script>-->
+<!--<script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.js"></script>-->
+
+<script src="js/vendor/ng-backstretch.min.js"></script>
+<script src="js/vendor/ocLazyLoad.min.js"></script>
 
 <!--<script src="app/bower_components/angular/angular.js"></script>-->
 <!--<script src="app/bower_components/angular-animate/angular-animate.js"></script>-->
@@ -84,20 +87,17 @@
 
 <!-- *** Application scripts *** -->
 <script src="js/app.js"></script>  <!-- must load first -->
+<script src="js/core/core.module.js"></script>
 <script src="js/app.module.js"></script>
 
 <script src="js/app.start.js"></script>
 <script src="js/app.route.js"></script>
 <script src="js/auth/auth.service.js"></script>
-
-<script src="js/vendor/ng-backstretch.min.js"></script>
-<!--<script src="js/vendor/ng-backstretch.js"></script>-->
-
 <script src="js/vendor/logger.service.js"></script>
 
-<script src="js/login/login.controller.js"></script>
-<script src="js/dashboard/header.controller.js"></script>
-<script src="js/dashboard/header.directive.js"></script>
+<!--<script src="js/login/login.controller.js"></script>-->
+<!--<script src="js/dashboard/header.controller.js"></script>-->
+<!--<script src="js/dashboard/header.directive.js"></script>-->
 
 <!-- *** UI scripts *** -->
 <script src="js/ui/ui.module.js"></script>

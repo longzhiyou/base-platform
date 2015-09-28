@@ -178,17 +178,17 @@ var App = function () {
 
     return {
         init: function () {
-            handleBootstrap();
-            handleSearch();
-            handleSearchV1();
-            handleSearchV2();
-            handleTopBar();
-            handleTopBarSubMenu();
-            handleToggle();
+            //handleBootstrap();
+            //handleSearch();
+            //handleSearchV1();
+            //handleSearchV2();
+            //handleTopBar();
+            //handleTopBarSubMenu();
+            //handleToggle();
             handleHeader();
-            handleMegaMenu();
-            handleHoverSelector();
-            handleEqualHeightColumns();
+            //handleMegaMenu();
+            //handleHoverSelector();
+            //handleEqualHeightColumns();
         },
 
         //Counters 
