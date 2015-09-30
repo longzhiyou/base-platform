@@ -6,10 +6,10 @@
     'use strict';
     
     angular.module("app.ui")
-        .config(['$stateProvider','$ocLazyLoadProvider', configureStates]);
+        .config(['$stateProvider', configureStates]);
 
     /////////////////////
-    function configureStates($stateProvider,$ocLazyLoadProvider) {
+    function configureStates($stateProvider) {
         $stateProvider
             .state('app.ui',
             {
@@ -26,8 +26,6 @@
                             {
                                 files: ['js/ui/profile.controller.js']
                             }
-
-
                         ]);
                     }
                 }
