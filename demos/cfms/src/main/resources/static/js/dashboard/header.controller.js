@@ -18,7 +18,7 @@
                     //,children:[
                     //{label: 'Home.children1.children', link: 'dashboard.home'}]
                 }
-                //,{ label: 'Home.children', link: 'dashboard.content'}
+                ,{ label: 'FontAwesome', link: 'app.FontAwesome'}
                 ]
             }
             //,{ label: 'Content',  link: 'app.ui'}

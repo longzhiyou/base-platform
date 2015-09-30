@@ -30,6 +30,11 @@
                     }
                 }
             })
+            .state('app.FontAwesome',
+            {
+                url: '/ui/FontAwesome',
+                templateUrl: 'js/ui/FontAwesome.html'
+            })
               ;
 
     }
