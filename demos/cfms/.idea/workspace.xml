@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="77dfec05-4c92-4496-8a24-26ed9ea4e154" name="Default" comment="修改ng-backstretch 源代码，在高度为0的时候自动变为浏览器的高度。">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" readonly="true" id="77dfec05-4c92-4496-8a24-26ed9ea4e154" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.route.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/login/login.controller.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/login/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/ui/ui.route.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui/ui.route.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cfms.iws" />
@@ -44,8 +40,8 @@
       <file leaf-file-name="app.route.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5699659">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.6177474">
+              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
               <folding>
                 <element signature="e#842#1400#0" expanded="false" />
                 <element signature="e#1414#1950#0" expanded="false" />
@@ -891,7 +887,7 @@
       <workItem from="1443403695132" duration="18372000" />
       <workItem from="1443450335787" duration="4983000" />
       <workItem from="1443488659077" duration="5795000" />
-      <workItem from="1443584867605" duration="2443000" />
+      <workItem from="1443584867605" duration="2572000" />
     </task>
     <task id="LOCAL-00001" summary="增加readme，以及配置验证用户.">
       <created>1442981182598</created>
@@ -965,11 +961,17 @@
       <option name="project" value="LOCAL" />
       <updated>1443419854221</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="增加动态加载的规则以及路由使用遍历的方式。">
+      <created>1443589224401</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1443589224401</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82202000" />
+    <option name="totallyTimeSpent" value="82331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -1031,7 +1033,8 @@
     <MESSAGE value="增加日志功能，以及header指令。" />
     <MESSAGE value="修改home为业务上的UI整个模块。" />
     <MESSAGE value="修改ng-backstretch 源代码，在高度为0的时候自动变为浏览器的高度。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改ng-backstretch 源代码，在高度为0的时候自动变为浏览器的高度。" />
+    <MESSAGE value="增加动态加载的规则以及路由使用遍历的方式。" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加动态加载的规则以及路由使用遍历的方式。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1414,8 +1417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5699659">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.6177474">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
           <folding>
             <element signature="e#842#1400#0" expanded="false" />
             <element signature="e#1414#1950#0" expanded="false" />

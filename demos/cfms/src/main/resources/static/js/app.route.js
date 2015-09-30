@@ -59,7 +59,7 @@
         ];
 
 
-        for(var index in states){
+        for(var index=0;    index<states.length;   index++){
             $stateProvider.state(states[index]);
         }
 
