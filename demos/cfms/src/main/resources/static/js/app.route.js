@@ -6,9 +6,9 @@
     'use strict';
     
     angular.module("app")
-        .config(['$httpProvider','$stateProvider', '$urlRouterProvider','$compileProvider','$ocLazyLoadProvider', configureStates]);
+        .config(['$httpProvider','$stateProvider', '$urlRouterProvider','$compileProvider','$locationProvider', configureStates]);
     /////////////////////
-    function configureStates( $httpProvider,$stateProvider, $urlRouterProvider,$compileProvider,$ocLazyLoadProvider) {
+    function configureStates( $httpProvider,$stateProvider, $urlRouterProvider,$compileProvider,$locationProvider) {
 
         //$locationProvider.html5Mode({
         //    enabled: true,
@@ -16,12 +16,12 @@
         //    });
 
         $compileProvider.debugInfoEnabled(false);
-
+        $locationProvider.hashPrefix('!');
         $urlRouterProvider.otherwise('/login');       // Return to the login ordering screen
 
-        $stateProvider
-            .state('login',
+        var states = [
             {
+                name:'login',
                 url: '/login',
                 templateUrl: 'js/login/login.html',
                 controller: 'LoginController',
@@ -36,12 +36,9 @@
 
                         ]);
                     }
-                }
-
-            })
-
-            .state('app',
+                }},
             {
+                name:'app',
                 abstract: true,
                 url: '',
                 templateUrl: 'js/dashboard/dashboard.html',
@@ -58,8 +55,13 @@
                 }
 
 
-            });
+            }
+        ];
 
+
+        for(var index in states){
+            $stateProvider.state(states[index]);
+        }
 
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

@@ -2,7 +2,9 @@
 (function(angular) {
 	'use strict';
 
-	angular.module("app" ).controller( 'LoginController', ['$state','auth', LoginController]);
+	angular.module("app" ).controller( 'LoginController', LoginController);
+
+    LoginController.$inject = ['$state','auth'];
 
 	/////////////////////
 	function LoginController( $state,auth ) {

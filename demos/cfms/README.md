@@ -70,7 +70,9 @@ app --> [
     ]
 ```
 
-## Requirements
+## 动态加载文件的规则
+>模块js直接依赖，剩下的的直接动态加载
+
 [test bootstrap](http://www.runoob.com/bootstrap/bootstrap-button-dropdowns.html)
 
 ## Running an AngularJS App in Production
@@ -86,7 +88,7 @@ myApp.config(['$compileProvider', function ($compileProvider) {
 
 - Strict DI Mode
 ```html
-It is recommended to automate the explicit annotation via a tool 
+It is recommended to automate the explicit annotation via a tool
 like `ng-annotate` when you deploy to production (and enable strict di mode)
 
 <div ng-app="myApp" ng-strict-di>
@@ -94,8 +96,27 @@ like `ng-annotate` when you deploy to production (and enable strict di mode)
 </div>
 
 ```
-- Open terminal
-- Type `npm install -g node-inspector bower gulp`
+
+### 例子
+```javascript
+var contacts = {
+    name: 'contacts',  //mandatory
+    templateUrl: 'contacts.html'
+}
+var contactsList = {
+    name: 'contacts.list', //mandatory. This counter-intuitive requirement addressed in issue #368
+    parent: contacts,  //mandatory
+    templateUrl: 'contacts.list.html'
+}
+
+$stateProvider
+  .state(contacts)
+  .state(contactsList)
+```
+
+- Installing
+- Type `java -jar cfms-0.0.1-SNAPSHOT.jar`
+
 
 ## Installing Node.js and Bower Packages
 - Open terminal

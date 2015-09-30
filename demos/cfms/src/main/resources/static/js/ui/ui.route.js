@@ -19,7 +19,18 @@
             .state('app.profile',
             {
                 url: '/ui/profile',
-                templateUrl: 'js/ui/profile.html'
+                templateUrl: 'js/ui/profile.html',
+                resolve: {
+                    loadPlugin: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load([
+                            {
+                                files: ['js/ui/profile.controller.js']
+                            }
+
+
+                        ]);
+                    }
+                }
             })
               ;
 
