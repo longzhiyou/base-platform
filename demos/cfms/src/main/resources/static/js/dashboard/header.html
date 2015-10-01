@@ -26,12 +26,13 @@
             <ul class="nav navbar-nav">
                 <!-- Home -->
                 <li ng-repeat="state1 in vm.states" data-ng-class="{'dropdown':state1.children}" >
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">{{ state1.label }}
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="{{ state1.fa}}"></i>
+                        {{ state1.label }}
 
                     </a>
                     <ul ng-if="state1.children" class="dropdown-menu">
                         <li ng-repeat="state2 in state1.children"  data-ng-class="{'dropdown-submenu':state2.children}" >
-                            <a  ui-sref="{{ state2.link }}"  >{{ state2.label }}</a>
+                            <a  ui-sref="{{ state2.link }}"  > <i class="{{ state2.fa}}"></i> {{ state2.label }}</a>
                             <ul ng-if="state2.children" class="dropdown-menu">
                                 <li ng-repeat="state3 in state2.children">
                                     <a ui-sref="{{ state3.link }}">{{ state3.label }}</a>

@@ -13,8 +13,8 @@
     function HeaderController( $state ) {
 
         var headerStates = [
-            { label: 'Ui',     link: '',  children: [
-                { label: 'profile', link: 'app.profile'
+            { label: 'Ui',     link: '', fa:'fa fa-home fa-fw', children: [
+                { label: 'profile', link: 'app.profile', fa:'fa fa-book'
                     //,children:[
                     //{label: 'Home.children1.children', link: 'dashboard.home'}]
                 }
