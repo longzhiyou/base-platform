@@ -7,6 +7,10 @@ server:
 #  user:
 #    password: password
 
+mybatis:
+  configLocation: classpath:/mybatis-config.xml
+  typeAliasesPackage: cfms.mybatis.domin
+  mapperLocations: classpath:/mybatis/mapper/*.xml
 
 logging:
   level:

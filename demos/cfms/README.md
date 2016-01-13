@@ -5,6 +5,10 @@ __Common Foundation Management System.__
 
 >More details about the styles and patterns used in these apps can be found in my [AngularJS Style Guide](https://github.com/longzhiyou/angular-styleguide).
 
+
+### 整合JPA与mybatis的想法。
+
+
 ## Structure
 
 

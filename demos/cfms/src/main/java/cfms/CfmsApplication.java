@@ -3,12 +3,14 @@ package cfms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.security.Principal;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -43,7 +45,13 @@ public class CfmsApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(CfmsApplication.class, args);
+        ApplicationContext ctx = SpringApplication.run(CfmsApplication.class, args);
+        String[] beanNames = ctx.getBeanDefinitionNames();
+        Arrays.sort(beanNames);
+        for(String beanName : beanNames){
+            System.out.println(beanName);
+        }
+
         String password = "123456";
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         System.out.println(passwordEncoder.encode(password));
