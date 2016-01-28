@@ -8,6 +8,8 @@ __Common Foundation Management System.__
 
 ### 整合JPA与mybatis的想法。
 
+### 参考网站
+AngularJS 应用身份认证的技巧身份认证
 
 ## Structure
 

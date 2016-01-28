@@ -16,7 +16,8 @@
 
 				auth.authenticate({}, function(authenticated) {
 					if (authenticated) {
-						$location.path(auth.path);
+						//$location.path(auth.path);
+						return authenticated;
 					}
 				})
 			}

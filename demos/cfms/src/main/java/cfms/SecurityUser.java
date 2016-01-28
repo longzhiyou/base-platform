@@ -9,7 +9,7 @@ import java.util.Collection;
  *
  * Created by longzhiyou on 2015-08-24.
  */
-public class SecurityUser extends UsersEntity implements UserDetails {
+public class SecurityUser extends UserEntity implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -5,9 +5,9 @@
  */
 (function( angular  ) {
 
-    angular.module("app").factory('appStart',['$rootScope','Logger',factory]);
+    angular.module("app").factory('appStart',['$rootScope','Logger','auth',factory]);
 
-    function factory ($rootScope,Logger){
+    function factory ($rootScope,Logger,auth){
 
         var appStart = {
             reportStateChangesEnabled: false,
@@ -31,6 +31,34 @@
                 appStart.reportStateChangesEnabled = true;
                 $rootScope.$on('$stateChangeStart',
                     function(event, toState, toParams, fromState){
+                        // stop the change!
+                        //event.preventDefault();
+                        //security.authorize().success(function(d){
+                        //    // if we don't have a previous url
+                        //    if($location.$$url === "/" || $location.$$url === "/login"){
+                        //
+                        //        // If user has a preset home
+                        //        if(d.defaultDashboard){
+                        //            $location.path('workspace/' + d.defaultDashboard);
+                        //        } else {
+                        //            $location.path('welcome');
+                        //        }
+                        //    } else {
+                        //        // if we do, then continue
+                        //        $urlRouter.sync();
+                        //    }
+                        //}).error(function(){
+                        //    // redirect to home
+                        //    $location.path('login');
+                        //});
+
+
+                        if (!auth.authenticated&&(toState.name!="login")) {
+                                event.preventDefault();
+                                //console.log( auth );
+                                $rootScope.$state.go("login");
+                        }
+
                         Logger.log("stateChangeStart: from '"+fromState.name + "' to '"+ toState.name+"'");
                     });
 

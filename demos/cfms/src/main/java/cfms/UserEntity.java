@@ -7,8 +7,8 @@ import javax.persistence.*;
  * Created by longzhiyou on 2015-08-24.
  */
 @Entity
-@Table(name = "users", schema = "", catalog = "spring_security")
-public class UsersEntity {
+@Table(name = "user", schema = "", catalog = "spring_security")
+public class UserEntity {
     private String username;
     private String password;
     private boolean enabled;
@@ -48,7 +48,7 @@ public class UsersEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UsersEntity that = (UsersEntity) o;
+        UserEntity that = (UserEntity) o;
 
         if (enabled != that.enabled) return false;
         if (username != null ? !username.equals(that.username) : that.username != null) return false;

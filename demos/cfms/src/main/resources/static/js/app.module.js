@@ -40,6 +40,11 @@
 
                 // Initialize auth module with the home page and login/logout path
                 // respectively
+
+                //if (!auth.authenticated) {
+                //    $state.go('login');
+                //}
+
                 //auth.init('/home', '/login', '/logout');
             }]);
 

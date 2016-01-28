@@ -252,7 +252,7 @@ var App = function () {
             if (jQuery(window).width() > 768) {
                 MenuMode();
             }
-        },
+        }
 
     };
 
