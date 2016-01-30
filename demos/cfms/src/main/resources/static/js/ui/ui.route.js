@@ -35,6 +35,22 @@
                 url: '/ui/FontAwesome',
                 templateUrl: 'js/ui/FontAwesome.html'
             })
+            .state('app.TestTable',
+            {
+                url: '/ui/TestTable',
+                templateUrl: 'js/ui/TestTable.html',
+                controller: 'TestGridController',
+                controllerAs: 'vm',
+                resolve: {
+                    loadPlugin: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load([
+                            {
+                                files: ['js/ui/testTable.controller.js']
+                            }
+                        ]);
+                    }
+            }
+            })
               ;
 
     }

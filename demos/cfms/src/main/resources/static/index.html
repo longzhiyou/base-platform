@@ -27,6 +27,7 @@
 	<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 
+
 	<!-- CSS Global Compulsory -->
 	<!-- using twitter bootstrap, but of course -->
 	<link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -39,6 +40,7 @@
 
 	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="css/plugins/animate.css">
+	<link rel="styleSheet" href="css/vendor/ui-grid.min.css"/>
 
 	<!-- CSS Page Style -->
 	<link rel="stylesheet" href="css/pages/profile.css">
@@ -56,7 +58,9 @@
 
 <body class="header-fixed" >
 
-<div id="appView" ng-app="app" class="ng-cloak" ng-strict-di ui-view ></div>
+<div id="appView" ng-app="app" class="ng-cloak" ng-strict-di ui-view >
+	<!--root view-->
+</div>
 
 <!-- inject-vendor:js -->
 
@@ -71,6 +75,8 @@
 <!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>-->
 <!--<script src="//cdn.bootcss.com/angular.js/1.4.5/angular.js"></script>-->
 <!--<script src="//cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.js"></script>-->
+
+<script src="js/vendor/ui-grid.min.js"></script>
 
 <script src="js/vendor/ng-backstretch.min.js"></script>
 <script src="js/vendor/ocLazyLoad.min.js"></script>

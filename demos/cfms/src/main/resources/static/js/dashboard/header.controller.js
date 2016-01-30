@@ -20,6 +20,14 @@
                 }
                 ,{ label: 'FontAwesome', link: 'app.FontAwesome'}
                 ]
+            },
+            { label: '测试',     link: '', fa:'fa fa-home fa-fw', children: [
+                    { label: 'UI-Grid', link: 'app.TestTable', fa:'fa fa-book'
+                        //,children:[
+                        //{label: 'Home.children1.children', link: 'dashboard.home'}]
+                    }
+                    ,{ label: 'FontAwesome', link: 'app.FontAwesome'}
+                ]
             }
             //,{ label: 'Content',  link: 'app.ui'}
 

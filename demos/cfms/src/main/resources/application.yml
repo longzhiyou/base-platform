@@ -9,7 +9,7 @@ server:
 
 mybatis:
   configLocation: classpath:/mybatis-config.xml
-  typeAliasesPackage: cfms.mybatis.domin
+  typeAliasesPackage: cfms.mybatis.domain
   mapperLocations: classpath:/mybatis/mapper/*.xml
 
 logging:

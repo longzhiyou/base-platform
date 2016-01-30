@@ -52,12 +52,12 @@
                         //    $location.path('login');
                         //});
 
-
-                        if (!auth.authenticated&&(toState.name!="login")) {
-                                event.preventDefault();
-                                //console.log( auth );
-                                $rootScope.$state.go("login");
-                        }
+                        //先不进行认证
+                        //if (!auth.authenticated&&(toState.name!="login")) {
+                        //        event.preventDefault();
+                        //        //console.log( auth );
+                        //        $rootScope.$state.go("login");
+                        //}
 
                         Logger.log("stateChangeStart: from '"+fromState.name + "' to '"+ toState.name+"'");
                     });

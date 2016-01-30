@@ -8,8 +8,6 @@ __Common Foundation Management System.__
 
 ### 整合JPA与mybatis的想法。
 
-### 参考网站
-AngularJS 应用身份认证的技巧身份认证
 
 ## Structure
 
@@ -268,3 +266,8 @@ Source the file
 
 
 
+### 参考网站
+
+1. [AngularJS 应用身份认证的技巧身份认证](https://blog.coding.net/blog/techniques-for-authentication-in-angular-js-applications?type=hot "")
+1. [HTTP Basic Authentication for RESTFul Service](http://www.cnblogs.com/shanyou/archive/2010/08/08/1795032.html "")
+1. [Spring Security and Angular JS](https://spring.io/guides/tutorials/spring-security-and-angular-js/ )

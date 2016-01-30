@@ -33,11 +33,12 @@
 				$http.get('user', {
 					headers : headers
 				}).success(function(data) {
-					if (data.name) {
-						auth.authenticated = true;
-					} else {
-						auth.authenticated = false;
-					}
+					//if (data.name) {
+					//	auth.authenticated = true;
+					//} else {
+					//	auth.authenticated = false;
+					//}
+					auth.authenticated = !!data.name;
 					callback && callback(auth.authenticated);
 				}).error(function() {
 					auth.authenticated = false;

@@ -52,13 +52,12 @@
             }
         };
         var states = [login   ,app];
-
         for(var index=0;    index<states.length;   index++){
             $stateProvider.state(states[index]);
         }
 
-        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
+        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
         //Disabling Debug Data
         //myApp.config(['$compileProvider', function ($compileProvider) {
