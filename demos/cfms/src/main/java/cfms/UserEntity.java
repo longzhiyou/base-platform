@@ -7,7 +7,7 @@ import javax.persistence.*;
  * Created by longzhiyou on 2015-08-24.
  */
 @Entity
-@Table(name = "user", schema = "", catalog = "spring_security")
+@Table(name = "user", schema = "", catalog = "cfms")
 public class UserEntity {
     private String username;
     private String password;

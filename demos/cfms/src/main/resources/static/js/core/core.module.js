@@ -7,6 +7,7 @@
          */
         'ui.router',        // Routing
 
+        'ngResource',
         /*
          * Our reusable cross app code modules
          */

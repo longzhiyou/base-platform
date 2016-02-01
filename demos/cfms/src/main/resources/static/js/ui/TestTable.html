@@ -1,6 +1,11 @@
 <!--=== Profile ===-->
 <div class="container content profile">
     <div class="row">
+
+        <form class="reg-page" ng-submit="vm.search()">
+            <button type="submit" class="btn-u btn-block">search</button>
+        </form>
+
             <div ui-grid="{ data: vm.myData }" class="myGrid"></div>
 
     </div>

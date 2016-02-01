@@ -1,4 +1,4 @@
-package cfms.jpa.domain.entity;
+package cfms.module.party.domain.jpa.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -7,7 +7,7 @@ import java.sql.Date;
  * Created by longzhiyou on 2016-01-29.
  */
 @Entity
-@Table(name = "person", schema = "", catalog = "spring_security")
+@Table(name = "person", schema = "", catalog = "cfms")
 public class PersonEntity {
     private Integer partyId;
     private String name;
