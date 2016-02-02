@@ -8,6 +8,9 @@ __Common Foundation Management System.__
 
 ### 整合JPA与mybatis的想法。
 
+### 关键点
+1.  在 program arg 中配置--port=8086 --active=dev 则会调用application-dev.properties 的配置
+
 
 ## Structure
 

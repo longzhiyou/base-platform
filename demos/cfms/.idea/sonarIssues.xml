@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Changelog.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/META-INF/persistence.xml">
           <value>
             <set />
@@ -188,6 +193,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/static/css/custom.css">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/static/index.html">
           <value>
             <set />
@@ -253,7 +263,32 @@
             <set />
           </value>
         </entry>
+        <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/.mymetadata">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/.project">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/.settings/org.eclipse.wst.common.component">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/WebRoot/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/src/applicationContext.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/src/rebel.xml">
           <value>
             <set />
           </value>

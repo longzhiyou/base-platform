@@ -12,7 +12,7 @@
         'app.core',
         'ng-backstretch',
 
-        'ui.grid',
+
         /*
          * Everybody has access to these.
          * We could place these under every feature area,

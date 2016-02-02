@@ -2,11 +2,21 @@
 <div class="container content profile">
     <div class="row">
 
-        <form class="reg-page" ng-submit="vm.search()">
-            <button type="submit" class="btn-u btn-block">search</button>
-        </form>
+        <!--<form class="reg-page" ng-submit="vm.search()">-->
+            <!--<button type="submit" class="btn-u btn-block">search</button>-->
+        <!--</form>-->
 
-            <div ui-grid="{ data: vm.myData }" class="myGrid"></div>
+        <p>Using attribute:</p>
+        <p>{{vm.description | translate}}</p>
+        <!--ui-i18n="{{lang}}"-->
+        <button ng-click="vm.search()"  class="btn btn-success" translate="query"></button>
+        <div  class="gridStyle" ui-grid="gridOptions"   ui-grid-edit ui-grid-selection ></div>
+
+        <!--<button id='toggleGender' ng-click='vm.search()' >Toggle Gender</button>-->
+
+        <!--<div class="gridStyle" ui-grid="{ data: vm.myData }" ui-grid-selection></div>-->
+
+
 
     </div>
 </div><!--/container-->

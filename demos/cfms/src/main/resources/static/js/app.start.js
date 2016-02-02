@@ -5,9 +5,9 @@
  */
 (function( angular  ) {
 
-    angular.module("app").factory('appStart',['$rootScope','Logger','auth',factory]);
+    angular.module("app").factory('appStart',['$rootScope','Logger','auth','i18nService',factory]);
 
-    function factory ($rootScope,Logger,auth){
+    function factory ($rootScope,Logger,auth,i18nService){
 
         var appStart = {
             reportStateChangesEnabled: false,
@@ -18,6 +18,9 @@
         function start ( ) {
 
             Logger.debug=true;
+            $rootScope.langs = i18nService.getAllLangs();
+            $rootScope.lang = 'zh-cn';
+
             console.log( "cfms is loaded and running on " );
             // Trigger initial loading of data from server
             // The app may appear to be more responsive if loading happens in background
