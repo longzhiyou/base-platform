@@ -12,6 +12,7 @@
         'ngResource',
         'ngAnimate',
         'pascalprecht.translate',
+        'ngTable',
         /*
          * Our reusable cross app code modules
          */

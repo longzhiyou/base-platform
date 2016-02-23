@@ -253,6 +253,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/static/js/ui/ui.module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/static/js/ui/ui.route.js">
           <value>
             <set />
@@ -279,6 +284,11 @@
           </value>
         </entry>
         <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/WebRoot/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/WebRoot/common/js/common.js">
           <value>
             <set />
           </value>
