@@ -1,11 +1,13 @@
 package cfms;
 
 
+import cfms.module.party.domain.jpa.ProjectsRepository;
+import cfms.module.party.domain.jpa.entity.ProjectsEntity;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -15,9 +17,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-
+@EnableTransactionManagement
 @SpringBootApplication
 @Controller
+//@EnableJpaRepositories(basePackageClasses = MyRepositoryImpl.class)
+
 public class CfmsApplication {
 
     // Match everything without a suffix (so not a static resource),认证成功之后才会匹配，除了已有的匹配如login/
@@ -52,8 +56,14 @@ public class CfmsApplication {
             System.out.println(beanName);
         }
 
+//      ProjectsRepository projectsRepository = (ProjectsRepository)ctx.getBean("projectsRepository");
+//
+//        ProjectsEntity projectsEntity = new ProjectsEntity();
+//        projectsRepository.saveNode(projectsEntity);
+
+//        long count = projectsRepository.count();
         String password = "123456";
-        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        System.out.println(passwordEncoder.encode(password));
+//        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+//        System.out.println(passwordEncoder.encode(password));
     }
 }

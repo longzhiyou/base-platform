@@ -3,8 +3,14 @@
 
     <persistence-unit name="persistenceUnit">
         <class>cfms.module.party.domain.jpa.entity.PersonEntity</class>
+        <class>cfms.module.party.domain.jpa.entity.CustomerEntity</class>
+        <class>cfms.module.party.domain.jpa.entity.PartyEntity</class>
+        <class>cfms.module.party.domain.jpa.entity.PartyRoleTypeEntity</class>
+        <class>cfms.module.party.domain.jpa.entity.ProjectEntity</class>
+        <class>cfms.module.party.domain.jpa.entity.ProjectsEntity</class>
+        <class>cfms.module.party.domain.jpa.entity.AdjacencyListEntity</class>
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/spring_security"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/cfms"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.username"/>
             <property name="hibernate.connection.password"/>
