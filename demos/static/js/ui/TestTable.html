@@ -1,0 +1,85 @@
+<!--=== Profile ===-->
+<div class="container content profile">
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <!-- Begin Content -->
+            <p><strong>Page:</strong> {{tableParams.page()}}</p>
+            <p><strong>Count per page:</strong> {{tableParams.count()}}</p>
+            <table ng-table="tableParams" class="table ng-table-responsive">
+                <tr ng-repeat="user in $data">
+                    <td data-title="'Name'">
+                        {{user.name}}
+                    </td>
+                    <td data-title="'Age'">
+                        {{user.age}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <!-- Begin Content -->
+        <div class="col-md-12">
+
+            <button ng-click="vm.testAdd()"  class="btn btn-success" translate="add"></button>
+
+            <!--Basic Table-->
+            <div class="panel panel-green margin-bottom-40">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-tasks"></i> Basic Table</h3>
+                </div>
+                <div class="panel-body">
+                    <p>表格显示数据</p>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr >
+                            <th ng-repeat="column in vm.column ">
+                                {{column.field|translate}}
+                            </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr ng-repeat="data in vm.myData ">
+                        <td>{{ data.partyId }}</td>
+                        <td>{{ data.name }}</td>
+                        <td>{{ data.gender }}</td>
+                        <td>{{ data.height }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--End Basic Table-->
+
+        </div>
+        <!-- End Content -->
+        </div>
+
+    <div class="row">
+
+        <!--<form class="reg-page" ng-submit="vm.search()">-->
+            <!--<button type="submit" class="btn-u btn-block">search</button>-->
+        <!--</form>-->
+
+
+
+        <!--<p>Using attribute:</p>-->
+        <!--<p>{{vm.description | translate}}</p>-->
+
+        <!--ui-i18n="{{lang}}"-->
+        <button ng-click="vm.search()"  class="btn btn-success" translate="query"></button>
+        <div  class="gridStyle" ui-grid="gridOptions"   ui-grid-edit ui-grid-selection ></div>
+
+        <!--<button id='toggleGender' ng-click='vm.search()' >Toggle Gender</button>-->
+
+        <!--<div class="gridStyle" ui-grid="{ data: vm.myData }" ui-grid-selection></div>-->
+    </div>
+
+<!--=== End Profile ===-->
+</div>

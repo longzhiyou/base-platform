@@ -24,28 +24,49 @@
 
 			function authenticate(credentials, callback){
 
-				var headers = credentials && credentials.username ? {
-					authorization : "Basic "
-					+ btoa(credentials.username + ":"
-						+ credentials.password)
-				} : {};
 
-				$http.get('user', {
-					headers : headers
-				}).success(function(data) {
-					//if (data.name) {
-					//	auth.authenticated = true;
-					//} else {
-					//	auth.authenticated = false;
-					//}
-					auth.authenticated = !!data.name;
-					callback && callback(auth.authenticated);
-				}).error(function() {
-					auth.authenticated = false;
-					callback && callback(false);
-				});
 
-			}
+				//var headers = credentials && credentials.username ? {
+				//	authorization : "Basic "
+				//	+ btoa(credentials.username + ":"
+				//		+ credentials.password)
+				//} : {};
+
+				//$http.post('/login', credentials,{
+                 //   headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+                //}).success(function(data) {
+				//	//if (data.name) {
+				//	//	auth.authenticated = true;
+				//	//} else {
+				//	//	auth.authenticated = false;
+				//	//}
+				//	auth.authenticated = !!data.name;
+				//	callback && callback(auth.authenticated);
+				//}).error(function() {
+				//	auth.authenticated = false;
+				//	callback && callback(false);
+				//});
+                $http({
+                    method: 'POST',
+                    url: '/login',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    data: $.param(credentials),
+                }).success(function(data) {
+                    //if (data.name) {
+                    //	auth.authenticated = true;
+                    //} else {
+                    //	auth.authenticated = false;
+                    //}
+                    auth.authenticated = !!data.username;
+                    callback && callback(auth.authenticated);
+                }).error(function() {
+                    auth.authenticated = false;
+                    callback && callback(false);
+                });
+
+
+
+            }
 
 			function clear(){
 

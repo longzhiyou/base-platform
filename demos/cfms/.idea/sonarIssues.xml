@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../../git/Open-source/jwt-angular-spring/src/main/java/com/nibado/example/jwtangspr/UserController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Changelog.md">
           <value>
             <set />
@@ -58,6 +63,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/CorsFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/LoginFailureHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/LoginSuccessHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/SecurityConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/SecurityConfigurer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/cfms/SecurityUser.java">
           <value>
             <set />
@@ -74,6 +104,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/cfms/UsersEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/WebMvcConfigure.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/WebMvcConfigurer.java">
           <value>
             <set />
           </value>
@@ -144,6 +184,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/cfms/module/party/domain/jpa/NestSetRepositoryCustomImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/cfms/module/party/domain/jpa/PartyRepositoryImpl.java">
           <value>
             <set />
           </value>
@@ -308,6 +353,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/config/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
           <value>
             <set />
@@ -408,6 +458,186 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../spring-boot-security-jwt/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-boot-security-jwt/src/main/java/com/lzy/JwtFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-boot-security-jwt/src/main/java/com/lzy/SecurityConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-boot-security-jwt/src/main/java/com/lzy/UserController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-boot-security-jwt/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-boot-security-jwt/src/main/resources/static/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/rest/Quote.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/rest/RestController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/rest/Value.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/CorsFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/Quote.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/RestController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/SecurityConfigurer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/Value.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/WebMvcConfigurer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/java/com/lzy/cfms/security/WebSecurityConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/resources/static/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/resources/static/js/app.module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/resources/static/js/app.route.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/resources/static/js/app.start.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../cfms/project/server/src/main/resources/static/js/core/core.module.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../gs-securing-web/src/main/java/com/example/MvcConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../gs-securing-web/src/main/java/com/example/WebSecurityConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/applicationContext-Dao.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/applicationContext-mobile.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/applicationContext-online-Dao.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/cn/com/bestskip/epension/business/HealthEvaluationBusiness.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/cn/com/bestskip/epension/business/impl/EvaluationService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/cn/com/bestskip/epension/business/impl/HealthEvaluationBusinessImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/cn/com/bestskip/epension/mobile/api/evaluation/EvaluationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/cn/com/bestskip/epension/mobile/api/evaluation/EvaluationService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/bspEvaluate/project/HealthEvaluate/src/cn/com/bestskip/epension/mobile/api/evaluation/ReqServiceInfoOutput.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/养老产品研发/trunk/02.项目/02.天津建投/02.代码/01.Web/src/project/bsp-epension-tjjt/src/main/java/cn/com/bestskip/epension/business/impl/BuildingManagementBusinessImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/养老产品研发/trunk/02.项目/02.天津建投/02.代码/01.Web/src/project/bsp-epension-tjjt/src/main/java/cn/com/bestskip/epension/mybatis/building_management.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/work/svn/养老产品研发/trunk/02.项目/02.天津建投/02.代码/01.Web/src/project/bsp-epension-tjjt/src/main/resources/applicationContext.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="F:/work/维护/maintain/hexihui/deploy/epension_sd/.mymetadata">
           <value>
             <set />
@@ -469,6 +699,11 @@
           </value>
         </entry>
         <entry key="F:/work/维护/maintain/hexihui/dev/epension_sd/src/cn/com/bestskip/epension/util/message/BaiduPushMessage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="restClient/response10.txt">
           <value>
             <set />
           </value>

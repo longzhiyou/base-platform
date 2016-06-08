@@ -1,13 +1,10 @@
 package cfms;
 
 
-import cfms.module.party.domain.jpa.ProjectsRepository;
-import cfms.module.party.domain.jpa.entity.ProjectsEntity;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -17,10 +14,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@EnableTransactionManagement
 @SpringBootApplication
 @Controller
-//@EnableJpaRepositories(basePackageClasses = MyRepositoryImpl.class)
 
 public class CfmsApplication {
 
@@ -51,10 +46,10 @@ public class CfmsApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(CfmsApplication.class, args);
         String[] beanNames = ctx.getBeanDefinitionNames();
-        Arrays.sort(beanNames);
-        for(String beanName : beanNames){
-            System.out.println(beanName);
-        }
+//        Arrays.sort(beanNames);
+//        for(String beanName : beanNames){
+//            System.out.println(beanName);
+//        }
 
 //      ProjectsRepository projectsRepository = (ProjectsRepository)ctx.getBean("projectsRepository");
 //

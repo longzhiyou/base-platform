@@ -7,32 +7,7 @@ server:
 #  user:
 #    password: password
 
-mybatis:
-  configLocation: classpath:/mybatis-config.xml
-  typeAliasesPackage: cfms.mybatis.domain
-  mapperLocations: classpath:/mybatis/mapper/*.xml
 
 logging:
   level:
     org.springframework.security: DEBUG
-
-
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/cfms
-    username: admin
-    password: 123456
-    driverClassName:  com.mysql.jdbc.Driver
-
-    max-wait: 60000
-    time-between-eviction-runs-millis:  60000
-    validation-query: SELECT 1
-    test-on-borrow: true
-    test-while-idle:  true
-    min-evictable-idle-time-millis: 300000
-
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy

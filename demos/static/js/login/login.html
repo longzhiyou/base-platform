@@ -1,0 +1,54 @@
+
+<!--=== Content Part ===-->
+
+<div class="backstretch"  backstretch backstretch-images="vm.images" backstretch-duration="5000" backstretch-fade="1">
+</div>
+<div class="container content " >
+
+    <!--Reg Block-->
+    <div class="reg-block">
+        <div class="reg-block-header">
+            <h2>Login to your account</h2>
+
+        </div>
+
+
+        <form class="reg-page" ng-submit="vm.login()">
+
+
+            <div class="alert alert-danger" ng-show="vm.error">
+                There was a problem logging in. Please try again.
+            </div>
+
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" placeholder="Username" ng-model="vm.credentials.username" class="form-control">
+            </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="password" placeholder="Password" ng-model="vm.credentials.password" class="form-control">
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <button type="submit" class="btn-u btn-block">Log In</button>
+                </div>
+            </div>
+
+
+
+        </form>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <button ng-click="vm.greeting()" class="btn-u btn-block">Greeting</button>
+            </div>
+        </div>
+
+    </div>
+    <!--End Reg Block-->
+</div><!--/container-->
+
+<!--=== End Content Part ===-->
+
+
